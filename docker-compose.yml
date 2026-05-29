@@ -1,0 +1,24 @@
+services: 
+  redis: 
+    image: redis:7-alpine
+    container_name: local-redis
+    ports:    
+      - "6379:6379"
+    command: ["redis-server", "--appendonly", "yes"]
+    volumes:
+      - redis-data:/data 
+
+  mongo:
+    image: mongo:7
+    container_name: local-mongo
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_DATABASE: mydatabase
+    volumes:
+      - mongo-data:/data/db
+
+# Persist data in a volume
+volumes:
+  redis-data:
+  mongo-data:
