@@ -1,0 +1,29 @@
+{
+  "name": "site-banner",
+  "version": "1.0.0",
+  "description": "site-banner-redis",
+  "keywords": [
+    "Redis",
+    "Docker"
+  ],
+  "homepage": "https://github.com/amrutyajirobe/REDIS#readme",
+  "bugs": {
+    "url": "https://github.com/amrutyajirobe/REDIS/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amrutyajirobe/REDIS.git"
+  },
+  "license": "ISC",
+  "author": "Amrutya J",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node src/index.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "ioredis": "^5.11.1"
+  }
+}
